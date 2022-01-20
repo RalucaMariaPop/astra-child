@@ -1,0 +1,197 @@
+@import url("https://fonts.googleapis.com/css2?family=Ovo&display=swap");
+
+/*
+Theme Name: Astra Child
+Theme URI: https://wpastra.com/
+Template: astra
+Author: Brainstorm Force
+Author URI: https://wpastra.com/about/?utm_source=theme_preview&utm_medium=author_link&utm_campaign=astra_theme
+Description: Astra is fast, fully customizable &amp; beautiful WordPress theme suitable for blog, personal portfolio, business website and WooCommerce storefront. It is very lightweight (less than 50KB on frontend) and offers unparalleled speed. Built with SEO in mind, Astra comes with Schema.org code integrated and is Native AMP ready so search engines will love your site. It offers special features and templates so it works perfectly with all page builders like Elementor, Beaver Builder, Visual Composer, SiteOrigin, Divi, etc. Some of the other features: # WooCommerce Ready # Responsive # RTL &amp; Translation Ready # Extendible with premium addons # Regularly updated # Designed, Developed, Maintained &amp; Supported by Brainstorm Force. Looking for a perfect base theme? Look no further. Astra is fast, fully customizable and WooCommerce ready theme that you can use for building any kind of website!
+Tags: custom-menu,custom-logo,entertainment,one-column,two-columns,left-sidebar,e-commerce,right-sidebar,custom-colors,editor-style,featured-images,full-width-template,microformats,post-formats,rtl-language-support,theme-options,threaded-comments,translation-ready,blog
+Version: 3.8
+Updated: 2021-11-29 11:52:24
+
+*/
+
+/*Adding font*/
+
+.elementor-28
+  .elementor-element.elementor-element-51841304
+  .elementor-heading-title {
+  font-family: "Ovo", serif;
+}
+
+/*"Availability" text on single product page*/
+
+span.ast-stock-avail {
+  display: none;
+}
+/*Search icon image on single product page*/
+
+a.woocommerce-product-gallery__trigger {
+  display: none;
+}
+
+/*Adding underline under image text*/
+
+.astra-shop-summary-wrap {
+  border: none;
+  border-bottom: 1px solid black;
+}
+
+.product-details-wrap {
+  border: none;
+  border-bottom: 1px solid black;
+}
+
+/*Single product page images*/
+
+.elementor-widget-container .wp-post-image {
+  border-top-right-radius: 250px;
+  border-top-left-radius: 250px;
+}
+
+/*Link underline on all pages*/
+
+.elementor-widget-heading
+  .elementor-heading-title[class*="elementor-size-"]
+  > a {
+  text-decoration: none;
+}
+
+/*Link underline on blog page*/
+
+.elementor-226
+  .elementor-element.elementor-element-b0d830e
+  .elementor-post__title,
+.elementor-226
+  .elementor-element.elementor-element-b0d830e
+  .elementor-post__title
+  a {
+  text-decoration: none;
+}
+
+/*Images in blog page*/
+
+.elementor-226
+  .elementor-element.elementor-element-b0d830e
+  .elementor-post__thumbnail {
+  border-top-left-radius: 250px;
+  border-top-right-radius: 250px;
+}
+
+/*Border on contact page*/
+
+section.elementor-section.elementor-inner-section.elementor-element.elementor-element-648755b.elementor-section-boxed.elementor-section-height-default.elementor-section-height-default {
+  border: 1px solid black;
+}
+
+/*Lines for each form input - instead of boxes - on contact page*/
+
+input#form-field-name {
+  border: none;
+  border-bottom: 1px solid black;
+}
+input#form-field-email {
+  border: none;
+  border-bottom: 1px solid black;
+}
+textarea#form-field-message {
+  border: none;
+  border-bottom: 1px solid black;
+}
+
+/*Changing the colors of the icons - on home page*/
+
+.eael-woo-product-carousel-container
+  .icons-wrap.box-style
+  li
+  a.button.add_to_cart_button {
+  color: black;
+}
+.eael-woo-product-carousel-container .icons-wrap.box-style li a {
+  color: black;
+}
+
+/*Changing the color of the icons when hovered - on home page*/
+.eael-woo-product-carousel-container
+  .icons-wrap.box-style
+  li
+  a.button.add_to_cart_button:hover {
+  color: #fff;
+  background-color: black;
+}
+
+.eael-woo-product-carousel-container .icons-wrap.box-style li a:hover {
+  background: black;
+  color: white;
+}
+
+/* Making a float animation on the shop page using the transform and trasition properties */
+
+.astra-shop-thumbnail-wrap {
+  transform: translate(0, 0px);
+  transition-property: transform;
+  transition-duration: 0.5s;
+  transition-timing-function: ease;
+}
+
+.astra-shop-thumbnail-wrap:hover {
+  transform: translate(0, -10px);
+}
+
+/*Making a floating animation on the blog page using the transform and transition properties*/
+.elementor-226
+  .elementor-element.elementor-element-b0d830e
+  .elementor-posts-container
+  .elementor-post__thumbnail {
+  transform: translate(0, 0px);
+  transition-property: transform;
+  transition-duration: 0.5s;
+  transition-timing-function: ease;
+}
+
+.elementor-226
+  .elementor-element.elementor-element-b0d830e
+  .elementor-posts-container
+  .elementor-post__thumbnail:hover {
+  transform: translate(0, -10px);
+}
+
+/*Blog page - the image was getting cut when animated, so we modified the top margin for it not to be cut anymore */
+.elementor-post__thumbnail {
+  margin-top: 15px;
+}
+
+/*Fixing border issue for the form in the footer - When we did the border-bottom in the contact form, it applied on the footer as well*/
+
+.elementor.elementor-112.elementor-location-footer input#form-field-name {
+  border: none;
+}
+
+.elementor.elementor-112.elementor-location-footer input#form-field-email {
+  border: none;
+}
+
+/*Home page products top margin*/
+.product-details-wrap {
+  margin-top: 10px;
+}
+
+/*Changes on the single product page for the button and some other colours*/
+a.added_to_cart.wc-forward {
+  display: none;
+}
+
+a.button.wc-forward {
+  background-color: #becc9e;
+}
+
+.woocommerce-error {
+  border-top-color: #becc9e;
+}
+
+.woocommerce-error::before {
+  content: "\e016";
+  color: #becc9e;
+}
